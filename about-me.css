@@ -20,3 +20,8 @@
     border-width: 10px;
     border-color: rgb(12, 45, 72);
 }
+
+.about-socials {
+    height: 40px;
+    margin-top: 15px;
+}

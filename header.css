@@ -9,17 +9,12 @@
     top: 0px;
     left: 0px;
     right: 0px;
-    /* border-bottom-width: 2px;
-    border-bottom-style: solid;
-    border-color: rgb(235, 235, 235); */
 }
 
 .left-section {
-    /* background-color: lightgreen; */
     width: 250px;
     display: flex;
     justify-content: center;
-    /* flex: 1; */
 }
 
 .left-section .logo {
@@ -30,7 +25,6 @@
 }
 
 .right-section {
-    /* background-color: lightsalmon; */
     flex: 1;
     display: flex;
     justify-content: right;
@@ -48,6 +42,7 @@
     font-size: 20px;
     color: white;
     text-decoration: none;
+    transition: 0.1s ease-in-out;
 }
 
 .right-section a.button {
