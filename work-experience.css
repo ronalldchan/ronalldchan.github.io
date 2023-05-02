@@ -65,11 +65,17 @@
 }
 
 .work-title {
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bold;
+    line-height: 25px;
 }
 
 .work-company {
     font-style: italic;
     font-weight: bold;
+    line-height: 40px;
+}
+
+.work-description {
+    line-height: 24px;
 }
