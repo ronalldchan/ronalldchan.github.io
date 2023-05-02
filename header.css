@@ -31,7 +31,7 @@
 
 .right-section {
     /* background-color: lightsalmon; */
-    flex: 90;
+    flex: 1;
     display: flex;
     justify-content: right;
 }

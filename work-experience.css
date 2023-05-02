@@ -14,15 +14,22 @@
     padding-bottom: 50px;
 }
 
+.work-logo-container {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
 .work-logo {
     max-width: 200px;
-    /* height: auto; */
     border-style: solid;
     border-color: rgb(12, 45, 72);
     border-width: 5px;
-    margin-left: 100px;
-    margin-right: 100px;
     flex: 1;
+    transition: 0.3s ease-in-out;
+}
+
+.work-logo:hover {
+    transform: scale(1.2);
 }
 
 .work-info-container {
