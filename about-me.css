@@ -1,0 +1,22 @@
+.about-content {
+    display: flex;
+    align-items: center;
+}
+
+.about-info {
+    padding-left: 30px;
+}
+
+.about-description {
+    font-size: 20px;
+}
+
+.profile-picture {
+    max-width: 300px;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 10px;
+    border-color: rgb(12, 45, 72);
+}

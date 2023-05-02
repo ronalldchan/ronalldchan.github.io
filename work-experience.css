@@ -1,0 +1,68 @@
+.work-experiences {
+    display: flex;
+    flex-direction: column;
+
+    /* height: 1000px; */
+    /* padding-bottom: 40px; */
+    /* flex-basis: 0; */
+}
+
+.work-experience {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+.work-logo {
+    max-width: 200px;
+    /* height: auto; */
+    border-style: solid;
+    border-color: rgb(12, 45, 72);
+    border-width: 5px;
+    margin-left: 100px;
+    margin-right: 100px;
+    flex: 1;
+}
+
+.work-info-container {
+    flex: 1;
+}
+
+.work-info {
+    background-color: white;
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 25px;
+    /* flex: 1; */
+    max-width: 500px;
+    border-top-style: solid;
+    border-top-width: 15px;
+}
+
+.work-info.operto {
+    border-top-color: rgb(59, 115, 243);
+}
+
+.work-info.visier {
+    border-top-color: rgb(29, 129, 135);
+}
+
+.work-date {
+    font-size: 16px;
+    font-weight: bold;
+    flex: 1;
+    text-align: right;
+    /* justify-content: right; */
+}
+
+.work-title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.work-company {
+    font-style: italic;
+    font-weight: bold;
+}

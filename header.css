@@ -1,0 +1,63 @@
+.header {
+    height: 70px;
+    background-color: rgb(20, 93, 160);
+    display: flex;
+    flex-direction: row;
+    font-family: Roboto, Arial;
+    align-items: center;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    /* border-bottom-width: 2px;
+    border-bottom-style: solid;
+    border-color: rgb(235, 235, 235); */
+}
+
+.left-section {
+    /* background-color: lightgreen; */
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    /* flex: 1; */
+}
+
+.left-section .logo {
+    font-weight: bolder;
+    display: flex;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+}
+
+.right-section {
+    /* background-color: lightsalmon; */
+    flex: 90;
+    display: flex;
+    justify-content: right;
+}
+
+.right-section a {
+    text-align: center;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 20px;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.right-section a.button {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    
+}
+
+.right-section a:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
