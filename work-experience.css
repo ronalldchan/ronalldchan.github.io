@@ -34,6 +34,7 @@
 
 .work-info-container {
     flex: 1;
+    min-width: 300px;
 }
 
 .work-info {
@@ -44,6 +45,7 @@
     padding-bottom: 25px;
     /* flex: 1; */
     max-width: 500px;
+    /* min-width: 300px; */
     border-top-style: solid;
     border-top-width: 15px;
 }
@@ -53,27 +55,35 @@
 }
 
 .work-info.visier {
-    border-top-color: rgb(29, 129, 135);    
+    border-top-color: rgb(29, 129, 135);
+}
+
+.work-info.richmond {
+    border-top-color: rgb(255, 207, 0);
 }
 
 .work-date {
     font-size: 20px;
     font-weight: bold;
+    /* text-align: justify; */
+    /* min-width: 100px; */
+    /* padding-left: 0px; */
     flex: 1;
     text-align: right;
-    /* justify-content: right; */
 }
 
 .work-title {
     font-size: 20px;
     font-weight: bold;
-    line-height: 25px;
+    /* line-height: 35px; */
+    margin-bottom: 3px;
 }
 
 .work-company {
     font-style: italic;
     font-weight: bold;
-    line-height: 40px;
+    margin-bottom: 10px;
+    /* line-height: 30px; */
 }
 
 .work-description {

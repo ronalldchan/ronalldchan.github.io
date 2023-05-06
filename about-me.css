@@ -9,9 +9,11 @@
 
 .about-description {
     font-size: 20px;
+    min-width: 200px;
 }
 
 .profile-picture {
+    /* display: flex; */
     max-width: 300px;
     max-height: 300px;
     object-fit: cover;
