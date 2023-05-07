@@ -9,6 +9,7 @@
 
 .work-experience {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     padding-bottom: 50px;
@@ -63,7 +64,6 @@
 }
 
 .work-date {
-    font-size: 20px;
     font-weight: bold;
     /* text-align: justify; */
     /* min-width: 100px; */
@@ -73,7 +73,6 @@
 }
 
 .work-title {
-    font-size: 20px;
     font-weight: bold;
     /* line-height: 35px; */
     margin-bottom: 3px;
@@ -89,3 +88,7 @@
 .work-description {
     line-height: 24px;
 }
+/* 
+@media screen and (max-width: 800){
+    
+} */
