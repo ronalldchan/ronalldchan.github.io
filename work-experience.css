@@ -27,6 +27,7 @@
     border-width: 5px;
     flex: 1;
     transition: 0.3s ease-in-out;
+    border-radius: 10px;
 }
 
 .work-logo:hover {
@@ -49,6 +50,7 @@
     /* min-width: 300px; */
     border-top-style: solid;
     border-top-width: 15px;
+    border-radius: 0 0 10px 10px
 }
 
 .work-info.operto {

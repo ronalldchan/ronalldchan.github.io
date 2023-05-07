@@ -32,6 +32,10 @@ section {
     display: inline-block;
 }
 
+.text-supertitle {
+    font-size: 30px;
+}
+
 .text-subtitle {
     font-size: 20px;
 }
