@@ -7,7 +7,7 @@ function NavBar() {
     // <Box sx={{ flexGrow: 1 }}>
     <AppBar position="static">
       <Toolbar>
-        <Typography variant="h5" component="div">
+        <Typography variant="h6" component="div">
           Ronald Chan
         </Typography>
         <Stack direction="row" spacing={2} sx={{ ml: "auto" }}>
