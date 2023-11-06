@@ -1,16 +1,15 @@
-import { AppBar, Stack, Toolbar, Typography } from "@mui/material";
+import { AppBar, Stack, Toolbar, Typography, Box } from "@mui/material";
 import react from "react";
 import NavBarButton from "./NavBarButton";
 
 function NavBar() {
   return (
-    // <Box sx={{ flexGrow: 1 }}>
-    <AppBar position="static">
-      <Toolbar>
+    <AppBar position="sticky">
+      <Toolbar sx={{ justifyContent: "space-between", display: "flex" }}>
         <Typography variant="h6" component="div">
           Ronald Chan
         </Typography>
-        <Stack direction="row" spacing={2} sx={{ ml: "auto" }}>
+        <Stack direction="row" spacing={2}>
           <NavBarButton name="About" />
           <NavBarButton name="Work" />
           <NavBarButton name="Projects" />
@@ -18,7 +17,6 @@ function NavBar() {
         </Stack>
       </Toolbar>
     </AppBar>
-    // </Box>
   );
 }
 
