@@ -9,11 +9,11 @@ function NavBar() {
         <Typography variant="h6" component="div">
           Ronald Chan
         </Typography>
-        <Stack direction="row" spacing={2}>
-          <NavBarButton name="About" />
-          <NavBarButton name="Work" />
-          <NavBarButton name="Projects" />
-          <NavBarButton name="Contact" />
+        <Stack direction="row">
+          <NavBarButton name="About" href="#about" />
+          <NavBarButton name="Work" href="#work" />
+          <NavBarButton name="Projects" href="#projects" />
+          <NavBarButton name="Contact" href="#contact" />
         </Stack>
       </Toolbar>
     </AppBar>
