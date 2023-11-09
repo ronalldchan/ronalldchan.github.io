@@ -1,11 +1,11 @@
-import { AppBar, Stack, Toolbar, Typography, Box } from "@mui/material";
+import { Divider, Typography, Box } from "@mui/material";
 
 function Content() {
   return (
-    <>
-      <Box sx={{ height: 3000 }}></Box>
+    <Box sx={{ backgroundColor: "#f4f7f8", height: 2000 }}>
+      <Divider variant="middle" />
       <Typography id="about">something</Typography>
-    </>
+    </Box>
   );
 }
 
