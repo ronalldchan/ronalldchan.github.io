@@ -9,7 +9,7 @@ function NavBar() {
         <Typography variant="h6" component="div" fontWeight="bold">
           Ronald Chan
         </Typography>
-        <Stack direction="row">
+        <Stack direction="row" spacing={2}>
           <NavBarButton name="About" href="#about" />
           <NavBarButton name="Work" href="#work" />
           <NavBarButton name="Projects" href="#projects" />
