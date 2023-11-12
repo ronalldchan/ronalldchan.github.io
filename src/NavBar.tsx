@@ -1,6 +1,7 @@
-import { AppBar, Stack, Toolbar, Typography, Divider } from "@mui/material";
+import { AppBar, Stack, Toolbar, Typography, Divider, Button } from "@mui/material";
 import react from "react";
 import NavBarButton from "./NavBarButton";
+import PictureAsPdfIcon from "@mui/icons-material/PictureAsPdf";
 
 function NavBar() {
   return (
@@ -14,6 +15,9 @@ function NavBar() {
           <NavBarButton name="Work" href="#work" />
           <NavBarButton name="Projects" href="#projects" />
           <NavBarButton name="Contact" href="#contact" />
+          <Button color="inherit" endIcon={<PictureAsPdfIcon />} href="">
+            Resume
+          </Button>
         </Stack>
       </Toolbar>
     </AppBar>
