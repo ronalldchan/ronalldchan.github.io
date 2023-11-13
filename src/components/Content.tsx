@@ -1,8 +1,13 @@
-import { Container, Divider } from "@mui/material";
+import { Box, Divider } from "@mui/material";
 import AboutMe from "./AboutMe";
 
 function Content() {
-  return <AboutMe />;
+  return (
+    <Box>
+      <AboutMe />
+      <Divider variant="middle" />
+    </Box>
+  );
 }
 
 export default Content;
