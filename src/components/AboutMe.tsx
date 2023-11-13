@@ -1,4 +1,4 @@
-import { Box, Paper, Typography } from "@mui/material";
+import { Box, Paper, Stack, Typography } from "@mui/material";
 import headshot from "../images/headshot.png";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
@@ -8,7 +8,7 @@ function AboutMe() {
   return (
     <Box component="section" id="about">
       <Box py={6} display={"flex"} justifyContent={"center"} alignItems={"center"}>
-        <Box mr={5}>
+        <Box>
           <Typography variant="h3" fontWeight={"bold"}>
             Ronald Chan
           </Typography>
@@ -17,12 +17,14 @@ function AboutMe() {
             experience as a Quality Assurance Engineer, I've honed my skills in ensuring the seamless functionality and
             reliability of software solutions.
           </Typography>
-          <IconLinkButton href="https://www.linkedin.com/in/ronald-chan-info/">
-            <LinkedInIcon fontSize="large" />
-          </IconLinkButton>
-          <IconLinkButton href="https://github.com/ronalldchan">
-            <GitHubIcon fontSize="large" />
-          </IconLinkButton>
+          <Stack direction={"row"} spacing={2}>
+            <IconLinkButton href="https://github.com/ronalldchan">
+              <GitHubIcon fontSize="large" />
+            </IconLinkButton>
+            <IconLinkButton href="https://www.linkedin.com/in/ronald-chan-info/">
+              <LinkedInIcon fontSize="large" />
+            </IconLinkButton>
+          </Stack>
         </Box>
         <Paper
           sx={{
