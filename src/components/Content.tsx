@@ -1,12 +1,14 @@
-import { Box, Divider } from "@mui/material";
+import { Container, Divider } from "@mui/material";
 import AboutMe from "./AboutMe";
+import Experience from "./Experience";
 
 function Content() {
   return (
-    <Box>
+    <Container>
       <AboutMe />
       <Divider variant="middle" />
-    </Box>
+      <Experience />
+    </Container>
   );
 }
 
