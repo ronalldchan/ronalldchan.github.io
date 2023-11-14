@@ -8,7 +8,7 @@ function AboutMe() {
   return (
     <Box component="section" id="about">
       <Box py={6} display={"flex"} justifyContent={"center"} alignItems={"center"}>
-        <Box>
+        <Box mr={2}>
           <Typography variant="h3" fontWeight={"bold"}>
             Ronald Chan
           </Typography>
