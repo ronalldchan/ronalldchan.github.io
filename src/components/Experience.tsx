@@ -18,7 +18,15 @@ function Experience() {
           <Typography variant="h4" fontWeight={"bold"}>
             Experience
           </Typography>
-          <Timeline>
+          <Timeline position="alternate">
+            <TimelineItem>
+              <TimelineOppositeContent />
+              <TimelineSeparator>
+                <TimelineDot />
+                <TimelineConnector />
+              </TimelineSeparator>
+              <TimelineContent />
+            </TimelineItem>
             <TimelineItem>
               <TimelineOppositeContent sx={{ m: "auto 0" }}>MAY 2023 - PRESENT</TimelineOppositeContent>
               <TimelineSeparator>
@@ -54,6 +62,14 @@ function Experience() {
                   color="#1d8187"
                 />
               </TimelineContent>
+            </TimelineItem>
+            <TimelineItem>
+              <TimelineOppositeContent />
+              <TimelineSeparator>
+                <TimelineConnector />
+                <TimelineDot />
+              </TimelineSeparator>
+              <TimelineContent />
             </TimelineItem>
           </Timeline>
         </Box>
