@@ -12,9 +12,9 @@ function ExperienceForm(props: {
 }) {
   return (
     <Box display={"flex"} my={4}>
-      <Box sx={{ mr: 3 }} display="flex" alignItems={"center"}>
+      {/* <Box sx={{ mr: 3 }} display="flex" alignItems={"center"}>
         <Typography variant="subtitle1">{props.date}</Typography>
-      </Box>
+      </Box> */}
       <Paper elevation={2} sx={{ p: 3, borderTop: 15, borderColor: props.color, maxWidth: 500, minWidth: 250 }}>
         <a href={props.companyLink} target="_blank" style={{ color: "inherit" }}>
           <Typography variant="h6" fontWeight={"bold"} display={"inline-flex"} alignItems={"center"}>
