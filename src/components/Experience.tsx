@@ -28,7 +28,11 @@ function Experience() {
               <TimelineContent />
             </TimelineItem>
             <TimelineItem>
-              <TimelineOppositeContent sx={{ m: "auto 0" }}>MAY 2023 - PRESENT</TimelineOppositeContent>
+              <TimelineOppositeContent sx={{ m: "auto 0" }}>
+                <Typography variant="subtitle1" fontWeight={"bold"}>
+                  MAY 2023 - PRESENT
+                </Typography>
+              </TimelineOppositeContent>
               <TimelineSeparator>
                 <TimelineConnector />
                 <TimelineDot />
@@ -46,7 +50,11 @@ function Experience() {
               </TimelineContent>
             </TimelineItem>
             <TimelineItem>
-              <TimelineOppositeContent sx={{ m: "auto 0" }}>JAN 2022 - AUG 2022</TimelineOppositeContent>
+              <TimelineOppositeContent sx={{ m: "auto 0" }}>
+                <Typography variant="subtitle1" fontWeight={"bold"}>
+                  JAN 2023 - AUG 2022
+                </Typography>
+              </TimelineOppositeContent>
               <TimelineSeparator>
                 <TimelineConnector />
                 <TimelineDot />

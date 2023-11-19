@@ -15,7 +15,10 @@ function ExperienceForm(props: {
       {/* <Box sx={{ mr: 3 }} display="flex" alignItems={"center"}>
         <Typography variant="subtitle1">{props.date}</Typography>
       </Box> */}
-      <Paper elevation={2} sx={{ p: 3, borderTop: 15, borderColor: props.color, maxWidth: 500, minWidth: 250 }}>
+      <Paper
+        elevation={2}
+        sx={{ p: 3, borderTop: 15, borderColor: props.color, maxWidth: 500, minWidth: 250, textAlign: "left" }}
+      >
         <a href={props.companyLink} target="_blank" style={{ color: "inherit" }}>
           <Typography variant="h6" fontWeight={"bold"} display={"inline-flex"} alignItems={"center"}>
             {`${props.jobTitle} · ${props.company}`} <LaunchIcon fontSize="inherit" sx={{ ml: 0.5 }} />
