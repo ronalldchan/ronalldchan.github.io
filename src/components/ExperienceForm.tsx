@@ -2,7 +2,6 @@ import { Box, Paper, Typography } from "@mui/material";
 import LaunchIcon from "@mui/icons-material/Launch";
 
 function ExperienceForm(props: {
-  date: string;
   jobTitle: string;
   company: string;
   companyLink: string;
@@ -12,9 +11,6 @@ function ExperienceForm(props: {
 }) {
   return (
     <Box display={"flex"} my={4}>
-      {/* <Box sx={{ mr: 3 }} display="flex" alignItems={"center"}>
-        <Typography variant="subtitle1">{props.date}</Typography>
-      </Box> */}
       <Paper
         elevation={2}
         sx={{ p: 3, borderTop: 15, borderColor: props.color, maxWidth: 500, minWidth: 250, textAlign: "left" }}
