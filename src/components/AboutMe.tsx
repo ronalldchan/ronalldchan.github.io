@@ -6,8 +6,8 @@ import IconLinkButton from "./IconLinkButton";
 
 function AboutMe() {
   return (
-    <Container>
-      <Box component="section" id="about">
+    <Container id="about">
+      <Box component="section">
         <Box py={6} display={"flex"} justifyContent={"center"} alignItems={"center"}>
           <Box mr={2}>
             <Typography variant="h3" fontWeight={"bold"}>

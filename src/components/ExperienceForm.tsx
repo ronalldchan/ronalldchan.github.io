@@ -16,8 +16,14 @@ function ExperienceForm(props: {
         sx={{ p: 3, borderTop: 15, borderColor: props.color, maxWidth: 500, minWidth: 250, textAlign: "left" }}
       >
         <a href={props.companyLink} target="_blank" style={{ color: "inherit" }}>
-          <Typography variant="h6" fontWeight={"bold"} display={"inline-flex"} alignItems={"center"}>
-            {`${props.jobTitle} · ${props.company}`} <LaunchIcon fontSize="inherit" sx={{ ml: 0.5 }} />
+          <Typography
+            variant="h6"
+            fontWeight={"bold"}
+            display={"inline-flex"}
+            alignItems={"center"}
+            sx={{ "&:hover": { opacity: "70%", transitionDuration: "0.1s" } }}
+          >
+            {`${props.jobTitle} · ${props.company}`}
           </Typography>
         </a>
         <Typography variant="body1">{props.description}</Typography>
