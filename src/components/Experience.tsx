@@ -20,14 +20,13 @@ function Experience() {
             Experience
           </Typography>
           <Timeline position="alternate">
-            {/* <TimelineItem>
+            <TimelineItem sx={{ minHeight: "auto" }}>
               <TimelineOppositeContent />
               <TimelineSeparator>
                 <TimelineDot />
-                <TimelineConnector />
               </TimelineSeparator>
               <TimelineContent />
-            </TimelineItem> */}
+            </TimelineItem>
             <ExperienceTimelineItem date="MAY 2023 - DEC 2023">
               <ExperienceForm
                 jobTitle="Quality Assurance Engineer Co&#8209;op"
@@ -47,10 +46,9 @@ function Experience() {
                 color="#1d8187"
               />
             </ExperienceTimelineItem>
-            <TimelineItem>
+            <TimelineItem sx={{ minHeight: "auto" }}>
               <TimelineOppositeContent />
               <TimelineSeparator>
-                {/* <TimelineConnector /> */}
                 <TimelineDot />
               </TimelineSeparator>
               <TimelineContent />
