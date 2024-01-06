@@ -20,7 +20,7 @@ export default function ExperienceTimelineItem(props: { date: string; children: 
         <TimelineDot />
         <TimelineConnector />
       </TimelineSeparator>
-      <TimelineContent>{props.children}</TimelineContent>
+      <TimelineContent my={2}>{props.children}</TimelineContent>
     </TimelineItem>
   );
 }
