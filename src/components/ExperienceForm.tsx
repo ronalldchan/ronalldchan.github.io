@@ -1,5 +1,4 @@
 import { Box, Paper, Typography } from "@mui/material";
-import LaunchIcon from "@mui/icons-material/Launch";
 
 function ExperienceForm(props: {
   jobTitle: string;

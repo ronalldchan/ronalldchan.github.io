@@ -1,4 +1,4 @@
-import { Box, Container, Typography } from "@mui/material";
+import { Box, Container, List, ListItem, ListItemText, Typography } from "@mui/material";
 import ExperienceForm from "./ExperienceForm";
 import {
   Timeline,
@@ -27,7 +27,7 @@ function Experience() {
               </TimelineSeparator>
               <TimelineContent />
             </TimelineItem>
-            <ExperienceTimelineItem date="MAY 2023 - DEC 2023">
+            <ExperienceTimelineItem date="May 2023 - Dec. 2023">
               <ExperienceForm
                 jobTitle="Quality Assurance Engineer Co&#8209;op"
                 company="Operto"
@@ -37,7 +37,7 @@ function Experience() {
                 color="#002780"
               />
             </ExperienceTimelineItem>
-            <ExperienceTimelineItem date="JAN 2022 - AUG 2022">
+            <ExperienceTimelineItem date="Jan. 2022 - Aug. 2022">
               <ExperienceForm
                 jobTitle="Test Developer Co&#8209;op"
                 company="Visier"
