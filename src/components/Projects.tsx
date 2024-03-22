@@ -3,12 +3,16 @@ import ProjectCard from "./ProjectCard";
 import ubcnotes from "../images/ubcnotes.png";
 import website from "../images/website.png";
 import dbproject from "../images/translinkdb.png";
+import dsl from "../images/dsl.png";
 
 const cardData = [
   {
     title: "File Organizer DSL · 2024",
-    description: ["A DSL made to help users organize their files"],
-    image: ubcnotes,
+    description: [
+      "A DSL made to help users organize their files.",
+      "Implemented the evaluator component of the DSL, optimizing AST tree traversal and enabling core functionality.",
+    ],
+    image: dsl,
   },
   {
     title: "UBC Notes · 2023",
