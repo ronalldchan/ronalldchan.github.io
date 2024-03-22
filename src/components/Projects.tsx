@@ -4,6 +4,7 @@ import ubcnotes from "../images/ubcnotes.png";
 import website from "../images/website.png";
 import dbproject from "../images/translinkdb.png";
 import dsl from "../images/dsl.png";
+import insight from "../images/insight.png";
 
 const cardData = [
   {
@@ -33,7 +34,7 @@ const cardData = [
       "A full stack web development project to enable effective querying of historical data regarding a university’s class sections and rooms.",
       "Designed and implemented the backend architecture, ensuring seamless data management and optimal performance through efficient database design and API implementation.",
     ],
-    image: website,
+    image: insight,
   },
   {
     title: "TransLink Database App · 2021",
