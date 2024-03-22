@@ -11,7 +11,7 @@ function NavBar() {
           <NavBarButton name="Experience" href="#experience" />
           <NavBarButton name="Projects" href="#projects" />
           <NavBarButton name="Contact" href="#contact" />
-          <NavBarButton name="Resume" href="" />
+          <NavBarButton name="Resume" href="/resume.pdf" />
         </Stack>
       </Toolbar>
     </AppBar>
