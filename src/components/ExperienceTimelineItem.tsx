@@ -13,16 +13,14 @@ export default function ExperienceTimelineItem(props: { date: string; children: 
   return (
     <TimelineItem>
       <TimelineOppositeContent sx={{ m: "auto 0" }}>
-        <Typography variant="h6" fontWeight={""}>
-          {props.date}
-        </Typography>
+        <Typography variant="h6">{props.date}</Typography>
       </TimelineOppositeContent>
       <TimelineSeparator>
         <TimelineConnector />
         <TimelineDot />
         <TimelineConnector />
       </TimelineSeparator>
-      <TimelineContent>{props.children}</TimelineContent>
+      <TimelineContent my={2}>{props.children}</TimelineContent>
     </TimelineItem>
   );
 }

@@ -2,18 +2,46 @@ import { Box, Container, Grid, Typography } from "@mui/material";
 import ProjectCard from "./ProjectCard";
 import ubcnotes from "../images/ubcnotes.png";
 import website from "../images/website.png";
+import dbproject from "../images/translinkdb.png";
+import dsl from "../images/dsl.png";
+import insight from "../images/insight.png";
 
 const cardData = [
   {
-    title: "UBC Notes",
-    description:
-      "Led a 4-person team as part of a nwPlus's HackCamp 12-hour hackathon. Project was aimed to promote inclusivity by creating a centralized platform for seamless, collaborative access to class notes among students. Utilized Google Firebase to architect the backend infrastructure, allowing for efficient note storage and retrieval for seamless knowledge exchange within the academic community.",
+    title: "File Organizer DSL · 2024",
+    description: [
+      "A DSL made to help users organize their files.",
+      "Implemented the evaluator component of the DSL, optimizing AST tree traversal and enabling core functionality.",
+    ],
+    image: dsl,
+  },
+  {
+    title: "UBC Notes · 2023",
+    description: [
+      "A 12-hour nwPlus hackathon project aimed at promoting inclusivity by creating a centralized platform for seamless, collaborative access to class notes among students.",
+      "Utilized Google Firebase to create the backend infrastructure, allowing for note storage and retrieval for knowledge exchange within the academic community.",
+    ],
     image: ubcnotes,
   },
   {
-    title: "Personal Portfolio Website",
-    description: "",
+    title: "Portfolio Website · 2023",
+    description: ["My website that you are looking at now!", "Created with TypeScript, React, and Material UI"],
     image: website,
+  },
+  {
+    title: "Insight UBC · 2022",
+    description: [
+      "A full stack web development project to enable effective querying of historical data regarding a university’s class sections and rooms.",
+      "Designed and implemented the backend architecture, ensuring seamless data management and optimal performance through efficient database design and API implementation.",
+    ],
+    image: insight,
+  },
+  {
+    title: "TransLink Database App · 2021",
+    description: [
+      "A SQL database based on the TransLink transportation network using HTML and PHP to query, add, and remove data from the database.",
+    ],
+    image: dbproject,
   },
 ];
 
