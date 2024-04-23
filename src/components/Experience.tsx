@@ -1,4 +1,4 @@
-import { Box, Container, List, ListItem, ListItemText, Typography } from "@mui/material";
+import { Box, Container, Typography } from "@mui/material";
 import ExperienceCard from "./ExperienceCard";
 import {
   Timeline,
