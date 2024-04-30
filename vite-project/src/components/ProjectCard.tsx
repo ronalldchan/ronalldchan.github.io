@@ -1,6 +1,13 @@
 import { Button, Card, CardActions, CardContent, CardMedia, Divider, List, ListItem, Typography } from "@mui/material";
 
-function ProjectCard(props: { title: string; subtitle: string; description: string[]; image: string; link: string }) {
+function ProjectCard(props: {
+  title: string;
+  subtitle: string;
+  description: string[];
+  image: string;
+  github: string;
+  details?: string;
+}) {
   return (
     <Card sx={{ width: 500 }}>
       <CardMedia sx={{ height: 250, objectPosition: "top" }} image={props.image} component={"img"} />
@@ -19,7 +26,8 @@ function ProjectCard(props: { title: string; subtitle: string; description: stri
         </List>
       </CardContent>
       <CardActions>
-        <Button href={props.link}>github</Button>
+        <Button href={props.github}>github</Button>
+        {props.details != undefined ? <Button href={props.details}>Details</Button> : null}
       </CardActions>
     </Card>
   );

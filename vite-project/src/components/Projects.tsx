@@ -19,7 +19,7 @@ function Projects() {
                 "Implemented the evaluator component of the DSL, optimizing AST tree traversal and enabling core functionality.",
               ]}
               image={"/projects/dsl.png"}
-              link="https://github.com/ronalldchan/fldr-dsl"
+              github="https://github.com/ronalldchan/fldr-dsl"
             />
           </Grid>
           <Grid item>
@@ -31,7 +31,8 @@ function Projects() {
                 "Utilized Google Firebase to create the backend infrastructure, allowing for note storage and retrieval for knowledge exchange within the academic community.",
               ]}
               image={"/projects/ubcnotes.png"}
-              link="https://github.com/ronalldchan/UBC-Notes"
+              github="https://github.com/ronalldchan/UBC-Notes"
+              details="https://devpost.com/software/ubc-notes?ref_content=my-projects-tab&ref_feature=my_projects"
             />
           </Grid>
           <Grid item>
@@ -43,7 +44,7 @@ function Projects() {
                 "Created with TypeScript, React, and Material UI.",
               ]}
               image={"/projects/website.png"}
-              link="https://github.com/ronalldchan/ronalldchan.github.io"
+              github="https://github.com/ronalldchan/ronalldchan.github.io"
             />
           </Grid>
           <Grid item>
@@ -55,7 +56,7 @@ function Projects() {
                 "Allows users to add, remove, and query data regarding the network via a HTML and PHP frontend.",
               ]}
               image={"/projects/translinkdb.png"}
-              link="https://github.com/ronalldchan/Translink-Database"
+              github="https://github.com/ronalldchan/Translink-Database"
             />
           </Grid>
         </Grid>
