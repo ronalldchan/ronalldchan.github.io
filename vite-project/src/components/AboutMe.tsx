@@ -15,8 +15,8 @@ function AboutMe() {
             </Typography>
             <Typography variant="body1">
               Hi, I'm Ronald, a fourth-year computer science student at The University of British Columbia. With
-              hands-on experience as a Quality Assurance Engineer, I've honed my skills in ensuring the seamless
-              functionality and reliability of software solutions.
+              hands-on experience as a software developer, I've honed my skills in ensuring the seamless functionality
+              and reliability of software solutions.
             </Typography>
             <Stack direction={"row"}>
               <IconButton href="https://www.linkedin.com/in/ronald-chan-info/">
@@ -36,7 +36,7 @@ function AboutMe() {
                 // borderRadius: "10%",
               }}
             >
-              <img src={"/headshot.png"} style={{ width: "100%" }} />
+              <img src={"/headshot_op.png"} style={{ width: "100%" }} />
             </Paper>
           </Grid>
         </Grid>

@@ -2,6 +2,7 @@ import { Container, Divider } from "@mui/material";
 import AboutMe from "./AboutMe";
 import Experience from "./Experience";
 import Projects from "./Projects";
+import Contact from "./Contact";
 
 function Content() {
   return (
@@ -11,6 +12,8 @@ function Content() {
       <Experience />
       <Divider />
       <Projects />
+      <Divider />
+      <Contact />
     </Container>
   );
 }

@@ -8,7 +8,7 @@ function Projects() {
         <Typography variant="h4" fontWeight={"bold"}>
           Projects
         </Typography>
-        <Grid container justifyContent={"space-around"} spacing={3} py={3}>
+        <Grid container justifyContent={"center"} spacing={3} py={3}>
           <Grid item>
             <ProjectCard
               title="Folder DSL"
@@ -19,6 +19,7 @@ function Projects() {
                 "Implemented the evaluator component of the DSL, optimizing AST tree traversal and enabling core functionality.",
               ]}
               image={"/projects/dsl.png"}
+              link="https://github.com/ronalldchan/fldr-dsl"
             />
           </Grid>
           <Grid item>
@@ -30,6 +31,7 @@ function Projects() {
                 "Utilized Google Firebase to create the backend infrastructure, allowing for note storage and retrieval for knowledge exchange within the academic community.",
               ]}
               image={"/projects/ubcnotes.png"}
+              link="https://github.com/ronalldchan/UBC-Notes"
             />
           </Grid>
           <Grid item>
@@ -40,7 +42,8 @@ function Projects() {
                 "My website that you are looking at now!",
                 "Created with TypeScript, React, and Material UI.",
               ]}
-              image={"/projects/ubcnotes.png"}
+              image={"/projects/website.png"}
+              link="https://github.com/ronalldchan/ronalldchan.github.io"
             />
           </Grid>
           <Grid item>
@@ -48,9 +51,11 @@ function Projects() {
               title="Translink Database App"
               subtitle="SQL, HTML, PHP"
               description={[
-                "A SQL database based on the TransLink transportation network using HTML and PHP to query, add, and remove data from the database.",
+                "A SQL database based on the TransLink transportation network.",
+                "Allows users to add, remove, and query data regarding the network via a HTML and PHP frontend.",
               ]}
               image={"/projects/translinkdb.png"}
+              link="https://github.com/ronalldchan/Translink-Database"
             />
           </Grid>
         </Grid>
