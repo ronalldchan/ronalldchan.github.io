@@ -2,15 +2,18 @@ import { Container, Divider } from "@mui/material";
 import AboutMe from "./AboutMe";
 import Experience from "./Experience";
 import Projects from "./Projects";
+import Contact from "./Contact";
 
 function Content() {
   return (
     <Container>
       <AboutMe />
-      <Divider variant="middle" />
+      <Divider />
       <Experience />
-      <Divider variant="middle" />
+      <Divider />
       <Projects />
+      <Divider />
+      <Contact />
     </Container>
   );
 }

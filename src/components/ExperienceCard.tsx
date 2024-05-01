@@ -1,33 +1,35 @@
-import { Card, List, ListItem, ListItemText, Typography } from "@mui/material";
+import { Card, CardContent, List, ListItem, Typography } from "@mui/material";
 
 function ExperienceCard(props: {
   jobTitle: string;
   company: string;
   companyLink: string;
   description: string[];
-  tags?: string[];
   color: string;
 }) {
   return (
-    <Card sx={{ p: 3, borderTop: 15, borderColor: props.color, maxWidth: 500, minWidth: 250, textAlign: "left" }}>
-      <a href={props.companyLink} target="_blank" style={{ color: "inherit" }}>
+    <Card sx={{ borderTop: 15, borderColor: props.color, maxWidth: 500 }}>
+      <CardContent sx={{ textAlign: "left" }}>
         <Typography
+          component={"a"}
+          href={props.companyLink}
           variant="h6"
           fontWeight={"bold"}
-          display={"inline-flex"}
-          alignItems={"center"}
-          sx={{ "&:hover": { opacity: "70%", transitionDuration: "0.1s" } }}
+          display={"inline"}
+          sx={{
+            "&:hover": { opacity: "70%", transitionDuration: "0.1s" },
+            textDecoration: "none",
+            color: "inherit",
+          }}
         >
           {`${props.jobTitle} · ${props.company}`}
         </Typography>
-      </a>
-      <List sx={{ listStyleType: "disc", pl: 3, py: 0 }}>
-        {props.description.map((item) => (
-          <ListItem sx={{ display: "list-item", p: 0 }}>
-            <ListItemText>{item}</ListItemText>
-          </ListItem>
-        ))}
-      </List>
+        <List sx={{ listStyleType: "disc", pl: 3, py: 0 }}>
+          {props.description.map((item) => (
+            <ListItem sx={{ display: "list-item", pl: 0, py: 0 }}>{item}</ListItem>
+          ))}
+        </List>
+      </CardContent>
     </Card>
   );
 }

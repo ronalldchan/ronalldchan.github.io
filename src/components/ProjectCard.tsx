@@ -1,22 +1,34 @@
-import { Card, CardContent, CardMedia, Divider, List, ListItem, ListItemText, Typography } from "@mui/material";
+import { Button, Card, CardActions, CardContent, CardMedia, Divider, List, ListItem, Typography } from "@mui/material";
 
-function ProjectCard(props: { title: string; description: string[]; image: string }) {
+function ProjectCard(props: {
+  title: string;
+  subtitle: string;
+  description: string[];
+  image: string;
+  github: string;
+  details?: string;
+}) {
   return (
-    <Card sx={{ width: "350px" }}>
-      <CardMedia component={"img"} height={"200"} image={props.image} sx={{ objectPosition: "0% 0%" }} />
+    <Card sx={{ maxWidth: 500 }}>
+      <CardMedia sx={{ height: 250, objectPosition: "top" }} image={props.image} component={"img"} />
       <Divider />
-      <CardContent>
+      <CardContent sx={{ minHeight: 230, overflow: "hidden" }}>
         <Typography variant="h6" fontWeight={"bold"}>
           {props.title}
         </Typography>
+        <Typography variant="subtitle1" fontStyle={"italic"}>
+          {props.subtitle}
+        </Typography>
         <List sx={{ listStyleType: "disc", pl: 3, py: 0 }}>
           {props.description.map((item) => (
-            <ListItem sx={{ display: "list-item", p: 0 }}>
-              <ListItemText>{item}</ListItemText>
-            </ListItem>
+            <ListItem sx={{ display: "list-item", pl: 0, py: 0 }}>{item}</ListItem>
           ))}
         </List>
       </CardContent>
+      <CardActions>
+        <Button href={props.github}>github</Button>
+        {props.details != undefined ? <Button href={props.details}>Details</Button> : null}
+      </CardActions>
     </Card>
   );
 }
