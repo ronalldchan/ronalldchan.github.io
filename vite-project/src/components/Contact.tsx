@@ -13,18 +13,18 @@ function Contact() {
           Contact
         </Typography>
         <Grid container justifyContent={"space-evenly"} py={3} spacing={3}>
-          <Grid item>
+          {/* <Grid item>
             <Box display={"flex"} flexDirection={"column"} alignItems={"center"}>
-              <Avatar sx={{ width: iconAvatar, height: iconAvatar, bgcolor: iconColor }}>
+              <Avatar sx={{ width: iconAvatar, height: iconAvatar, bgcolor: iconColor, mb: 1 }}>
                 <Phone sx={{ fontSize: iconSize }} />
               </Avatar>
               <Typography>Phone</Typography>
-              <Typography>+0 123 456 789</Typography>
+              <Typography>604-307-6789</Typography>
             </Box>
-          </Grid>
+          </Grid> */}
           <Grid item>
             <Box display={"flex"} flexDirection={"column"} alignItems={"center"}>
-              <Avatar sx={{ width: iconAvatar, height: iconAvatar, bgcolor: iconColor }}>
+              <Avatar sx={{ width: iconAvatar, height: iconAvatar, bgcolor: iconColor, mb: 1 }}>
                 <Email sx={{ fontSize: iconSize }} />
               </Avatar>
               <Typography>Email</Typography>

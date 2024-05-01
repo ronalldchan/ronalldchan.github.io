@@ -9,10 +9,10 @@ function ProjectCard(props: {
   details?: string;
 }) {
   return (
-    <Card sx={{ width: 500 }}>
+    <Card sx={{ maxWidth: 500 }}>
       <CardMedia sx={{ height: 250, objectPosition: "top" }} image={props.image} component={"img"} />
       <Divider />
-      <CardContent sx={{ height: 230, overflow: "hidden" }}>
+      <CardContent sx={{ minHeight: 230, overflow: "hidden" }}>
         <Typography variant="h6" fontWeight={"bold"}>
           {props.title}
         </Typography>

@@ -32,7 +32,7 @@ function Projects() {
               ]}
               image={"/projects/ubcnotes.png"}
               github="https://github.com/ronalldchan/UBC-Notes"
-              details="https://devpost.com/software/ubc-notes?ref_content=my-projects-tab&ref_feature=my_projects"
+              details="https://devpost.com/software/ubc-notes"
             />
           </Grid>
           <Grid item>
