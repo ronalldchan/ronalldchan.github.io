@@ -1,66 +1,65 @@
 import { Box, Container, Grid, Typography } from "@mui/material";
 import ProjectCard from "./ProjectCard";
-import ubcnotes from "../images/ubcnotes.png";
-import website from "../images/website.png";
-import dbproject from "../images/translinkdb.png";
-import dsl from "../images/dsl.png";
-import insight from "../images/insight.png";
-
-const cardData = [
-  {
-    title: "File Organizer DSL · 2024",
-    description: [
-      "A DSL made to help users organize their files.",
-      "Implemented the evaluator component of the DSL, optimizing AST tree traversal and enabling core functionality.",
-    ],
-    image: dsl,
-  },
-  {
-    title: "UBC Notes · 2023",
-    description: [
-      "A 12-hour nwPlus hackathon project aimed at promoting inclusivity by creating a centralized platform for seamless, collaborative access to class notes among students.",
-      "Utilized Google Firebase to create the backend infrastructure, allowing for note storage and retrieval for knowledge exchange within the academic community.",
-    ],
-    image: ubcnotes,
-  },
-  {
-    title: "Portfolio Website · 2023",
-    description: ["My website that you are looking at now!", "Created with TypeScript, React, and Material UI"],
-    image: website,
-  },
-  {
-    title: "Insight UBC · 2022",
-    description: [
-      "A full stack web development project to enable effective querying of historical data regarding a university’s class sections and rooms.",
-      "Designed and implemented the backend architecture, ensuring seamless data management and optimal performance through efficient database design and API implementation.",
-    ],
-    image: insight,
-  },
-  {
-    title: "TransLink Database App · 2021",
-    description: [
-      "A SQL database based on the TransLink transportation network using HTML and PHP to query, add, and remove data from the database.",
-    ],
-    image: dbproject,
-  },
-];
 
 function Projects() {
   return (
     <Container id="projects">
-      <Box component="section">
-        <Box py={6}>
-          <Typography variant="h4" fontWeight={"bold"}>
-            Projects
-          </Typography>
-          <Grid container spacing={3} display={"flex"} justifyContent={"center"} my={2}>
-            {cardData.map((item) => (
-              <Grid item>
-                <ProjectCard title={item.title} description={item.description} image={item.image} />
-              </Grid>
-            ))}
+      <Box component="section" py={6}>
+        <Typography variant="h4" fontWeight={"bold"}>
+          Projects
+        </Typography>
+        <Grid container justifyContent={"center"} spacing={3} py={3}>
+          <Grid item>
+            <ProjectCard
+              title="Folder DSL"
+              subtitle="Java, ANTLR"
+              description={[
+                "A DSL made to help users organize their files.",
+                "Supports conditionals, condition macros, loops, and mutable variables that allow users to define complex rules for organizing file content.",
+                "Implemented the evaluator component of the DSL, optimizing AST tree traversal and enabling core functionality.",
+              ]}
+              image={"/projects/dsl.png"}
+              github="https://github.com/ronalldchan/fldr-dsl"
+            />
           </Grid>
-        </Box>
+          <Grid item>
+            <ProjectCard
+              title="UBC Notes"
+              subtitle="TypeScript, Firebase, React, Material UI"
+              description={[
+                "A 12-hour nwPlus hackathon project aimed at promoting inclusivity by creating a centralized platform for seamless, collaborative access to class notes among students.",
+                "Utilized Google Firebase to create the backend infrastructure, allowing for note storage and retrieval for knowledge exchange within the academic community.",
+              ]}
+              image={"/projects/ubcnotes.png"}
+              github="https://github.com/ronalldchan/UBC-Notes"
+              details="https://devpost.com/software/ubc-notes"
+            />
+          </Grid>
+          <Grid item>
+            <ProjectCard
+              title="Portfolio Website"
+              subtitle="TypeScript, React, Material UI"
+              description={[
+                "My website that you are looking at now!",
+                "Created with TypeScript, React, and Material UI.",
+              ]}
+              image={"/projects/website.png"}
+              github="https://github.com/ronalldchan/ronalldchan.github.io"
+            />
+          </Grid>
+          <Grid item>
+            <ProjectCard
+              title="Translink Database App"
+              subtitle="SQL, HTML, PHP"
+              description={[
+                "A SQL database based on the TransLink transportation network.",
+                "Allows users to add, remove, and query data regarding the network via a HTML and PHP frontend.",
+              ]}
+              image={"/projects/translinkdb.png"}
+              github="https://github.com/ronalldchan/Translink-Database"
+            />
+          </Grid>
+        </Grid>
       </Box>
     </Container>
   );
