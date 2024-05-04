@@ -22,7 +22,7 @@ function Experience() {
                   companyLink="https://operto.com/"
                   description={[
                     "Enabled E2E test automation for Operto Teams and Connect products by building a testing framework using Playwright and Typescript, allowing future test development.",
-                    "Automated new deployments by integrating the E2E test automation framework into the CI/CD pipeline, ensuring software stability.",
+                    "Automated new deployments by integrating the E2E test automation framework into the CI/CD pipeline, enabling quick and reliable software releases.",
                     "Developed an onboarding guide for QA engineers, ensuring a smooth integration process and effective orientation within the QA team.",
                   ]}
                   color="#000000"
@@ -40,8 +40,8 @@ function Experience() {
                   companyLink="https://www.visier.com/"
                   description={[
                     "Performed manual testing, building automated tests and data validation via unit tests, integration tests and end-to-end UI automation acceptance tests.",
-                    "Reduced total automated E2E test run time by 50% by optimizing test data and parallelizing existing tests.",
-                    "Created a live test failure reporter to help developers view and analyze test results prior to completion.",
+                    "Reduced total automated E2E test run time by 50% by optimizing test data and parallelizing existing tests, leading to faster iterations, and increasing developer productivity.",
+                    "Implemented real-time test reporting functionality within the test runner, providing instant feedback on test outcomes and progress for developer productivity.",
                   ]}
                   color="#1d8187"
                 />

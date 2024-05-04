@@ -19,7 +19,7 @@ function Contact() {
                 <Email sx={{ fontSize: iconSize }} />
               </Avatar>
               <Typography>Email</Typography>
-              <Typography>ronaldchaninfo@gmail.com</Typography>
+              <Typography>career@ronaldchan.ca</Typography>
             </Box>
           </Grid>
         </Grid>
