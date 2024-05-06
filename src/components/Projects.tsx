@@ -11,6 +11,18 @@ function Projects() {
         <Grid container justifyContent={"center"} spacing={3} py={3}>
           <Grid item>
             <ProjectCard
+              title="Effective Tests Tool"
+              subtitle="Java, ANTLR, Gradle"
+              description={[
+                "An IDE tool that uses value agnostic static analysis and source code injected dynamic analysis to create a stronger test coverage metric to help developers ensure their tests are thoroughly covered.",
+                "Test coverage metric checks that all side effects of class methods are covered by assertions, a problem that traditional test coverage metrics fail to capture.",
+              ]}
+              image={"/projects/effective_tests.png"}
+              github="https://github.com/ronalldchan/effective-tests"
+            />
+          </Grid>
+          <Grid item>
+            <ProjectCard
               title="Folder DSL"
               subtitle="Java, ANTLR"
               description={[
