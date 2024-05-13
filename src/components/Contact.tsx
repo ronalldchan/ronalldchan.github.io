@@ -1,4 +1,4 @@
-import { Email, EmailRounded } from "@mui/icons-material";
+import { EmailRounded } from "@mui/icons-material";
 import { Avatar, Box, Container, Grid, Typography } from "@mui/material";
 
 function Contact() {
