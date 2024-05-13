@@ -1,10 +1,10 @@
-import { Email } from "@mui/icons-material";
+import { Email, EmailRounded } from "@mui/icons-material";
 import { Avatar, Box, Container, Grid, Typography } from "@mui/material";
 
 function Contact() {
   const iconSize: number = 50;
   const iconAvatar: number = iconSize * 1.5;
-  const iconColor: string = "#1976d2";
+  const iconColor: string = "primary.main";
 
   return (
     <Container id="contact">
@@ -16,7 +16,7 @@ function Contact() {
           <Grid item>
             <Box display={"flex"} flexDirection={"column"} alignItems={"center"}>
               <Avatar sx={{ width: iconAvatar, height: iconAvatar, bgcolor: iconColor, mb: 1 }}>
-                <Email sx={{ fontSize: iconSize }} />
+                <EmailRounded sx={{ fontSize: iconSize }} />
               </Avatar>
               <Typography>Email</Typography>
               <Typography>career@ronaldchan.ca</Typography>
