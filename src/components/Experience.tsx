@@ -21,9 +21,9 @@ function Experience() {
                                     company="Operto"
                                     companyLink="https://operto.com/"
                                     description={[
-                                        "Achieved robust test automation for Operto software products by designing and implementing a scalable E2E testing framework using Playwright and TypeScript, ensuring high test coverage and regression testing support for continuous software improvement.",
+                                        "Built a scalable E2E test automation framework from scratch using Playwright and TypeScript, reducing reliance on manual regression testing and enabling maintainable E2E test coverage.",
                                         "Streamlined deployment processes by integrating E2E test automation into the CI/CD pipeline, resulting in faster, more reliable releases and minimizing deployment errors.",
-                                        "Enhanced onboarding efficiency by creating a comprehensive QA engineer guide, streamlining the adoption of QA methodologies and best practices to support efficient quality processes.",
+                                        "Collaborated with developers and product managers to validate tickets for release, verify functionality, and develop regression test cases, ensuring comprehensive test coverage and smooth release cycles.",
                                     ]}
                                     color="#000000"
                                 />
@@ -39,9 +39,9 @@ function Experience() {
                                     company="Visier"
                                     companyLink="https://www.visier.com/"
                                     description={[
-                                        "Minimized developer downtime by introducing a real-time test reporting system, enabling instant insights into test outcomes, test failure analysis, and triaging, significantly expediting issue resolution.",
-                                        "Optimized E2E test run times by 50% through strategic test environment configuration, data optimization and parallelization, resulting in faster development cycles and a measurable boost to developer productivity.",
-                                        "Ensured software reliability by conducting comprehensive manual and automated testing, including unit, integration, and end-to-end UI tests, which improved test coverage and reduced production bugs.",
+                                        "Developed a real-time test reporting system, enabling faster failure triaging and reducing developer downtime, resulting in improved test debugging efficiency and expedited issue resolution.",
+                                        "Optimized E2E test execution by 50% through strategic test data management, parallelization, and environment configuration, accelerating development cycles.",
+                                        "Designed and executed manual and automated test cases for unit, integration, and end-to-end testing, enhancing software quality and reducing production defects.",
                                     ]}
                                     color="#1d8187"
                                 />
