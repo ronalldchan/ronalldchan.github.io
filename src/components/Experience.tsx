@@ -13,6 +13,20 @@ function Experience() {
                     <Stepper orientation="vertical">
                         <Step active>
                             <StepLabel StepIconProps={{ icon: "" }}>
+                                <Typography variant="h6">May 2025 - Present</Typography>
+                            </StepLabel>
+                            <StepContent>
+                                <ExperienceCard
+                                    jobTitle="Quality Engineer"
+                                    company="StackAdapt"
+                                    companyLink="https://www.stackadapt.com/"
+                                    description={[]}
+                                    color="#0061ff"
+                                />
+                            </StepContent>
+                        </Step>
+                        <Step active>
+                            <StepLabel StepIconProps={{ icon: "" }}>
                                 <Typography variant="h6">May 2023 - Dec. 2023</Typography>
                             </StepLabel>
                             <StepContent>
