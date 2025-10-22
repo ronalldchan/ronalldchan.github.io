@@ -36,7 +36,7 @@ function AboutMe() {
                                 // borderRadius: "10%",
                             }}
                         >
-                            <img src={"/headshot.png"} style={{ width: "100%" }} />
+                            <img src={"/headshot.jpg"} style={{ width: "100%" }} />
                         </Paper>
                     </Grid>
                 </Grid>
