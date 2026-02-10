@@ -14,7 +14,7 @@ function AboutMe() {
               Ronald Chan
             </Typography>
             <Typography variant="body1">
-              Hi, I'm Ronald, a Quality Engineer at StackAapt, where I help ensure the delivery of high-quality
+              Hi, I'm Ronald, a Quality Engineer at StackAdapt, where I help ensure the delivery of high-quality
               software. I hold a degree in Computer Science from The University of British Columbia, which gives me a
               strong technical foundation for working closely with developers and systems.
             </Typography>
