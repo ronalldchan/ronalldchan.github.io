@@ -5,44 +5,44 @@ import { GitHub, LinkedIn } from "@mui/icons-material";
 // import IconLinkButton from "./IconLinkButton";
 
 function AboutMe() {
-    return (
-        <Container id="about">
-            <Box component="section" py={6}>
-                <Grid container justifyContent={"center"} alignItems={"center"} spacing={4}>
-                    <Grid item maxWidth={500}>
-                        <Typography variant="h3" fontWeight={"bold"}>
-                            Ronald Chan
-                        </Typography>
-                        <Typography variant="body1">
-                            Hi, I'm Ronald, a Computer Science graduate from The University of British Columbia. With
-                            hands-on experience as a software developer, I've honed my skills in ensuring the seamless
-                            functionality and reliability of software solutions.
-                        </Typography>
-                        <Stack direction={"row"}>
-                            <IconButton href="https://www.linkedin.com/in/ronald-chan-info/">
-                                <LinkedIn fontSize="large" />
-                            </IconButton>
-                            <IconButton href="https://github.com/ronalldchan">
-                                <GitHub fontSize="large" />
-                            </IconButton>
-                        </Stack>
-                    </Grid>
-                    <Grid item>
-                        <Paper
-                            sx={{
-                                width: 300,
-                                height: 300,
-                                overflow: "hidden",
-                                // borderRadius: "10%",
-                            }}
-                        >
-                            <img src={"/headshot.jpg"} style={{ width: "100%" }} />
-                        </Paper>
-                    </Grid>
-                </Grid>
-            </Box>
-        </Container>
-    );
+  return (
+    <Container id="about">
+      <Box component="section" py={6}>
+        <Grid container justifyContent={"center"} alignItems={"center"} spacing={4}>
+          <Grid item maxWidth={500}>
+            <Typography variant="h3" fontWeight={"bold"}>
+              Ronald Chan
+            </Typography>
+            <Typography variant="body1">
+              Hi, I'm Ronald, a Quality Engineer at StackAapt, where I help ensure the delivery of high-quality
+              software. I hold a degree in Computer Science from The University of British Columbia, which gives me a
+              strong technical foundation for working closely with developers and systems.
+            </Typography>
+            <Stack direction={"row"}>
+              <IconButton href="https://www.linkedin.com/in/ronald-chan-info/">
+                <LinkedIn fontSize="large" />
+              </IconButton>
+              <IconButton href="https://github.com/ronalldchan">
+                <GitHub fontSize="large" />
+              </IconButton>
+            </Stack>
+          </Grid>
+          <Grid item>
+            <Paper
+              sx={{
+                width: 300,
+                height: 300,
+                overflow: "hidden",
+                // borderRadius: "10%",
+              }}
+            >
+              <img src={"/headshot.jpg"} style={{ width: "100%" }} />
+            </Paper>
+          </Grid>
+        </Grid>
+      </Box>
+    </Container>
+  );
 }
 
 export default AboutMe;
