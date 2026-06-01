@@ -1,10 +1,20 @@
-import { Box, Container, Step, StepContent, StepLabel, Stepper, Typography } from "@mui/material";
+import {
+  Box,
+  Container,
+  Step,
+  StepContent,
+  StepLabel,
+  Stepper,
+  Typography,
+} from "@mui/material";
 import ExperienceCard from "./ExperienceCard";
+import { SECTIONS } from "../constants/sections";
+import { EXPERIENCE } from "../constants/content";
 // import { Timeline, TimelineConnector, TimelineContent, TimelineDot, TimelineItem, TimelineSeparator } from "@mui/lab";
 
 function Experience() {
   return (
-    <Container id="experience">
+    <Container id={SECTIONS.EXPERIENCE}>
       <Box component={"section"} py={6}>
         <Typography variant="h4" fontWeight={"bold"}>
           Experience
@@ -17,14 +27,10 @@ function Experience() {
               </StepLabel>
               <StepContent>
                 <ExperienceCard
-                  jobTitle="Quality Engineer"
-                  company="StackAdapt"
-                  companyLink="https://www.stackadapt.com/"
-                  description={[
-                    "Reduced production defects by identifying and reproducing bugs with engineers during feature development and validation, resulting in fewer issues reaching release.",
-                    "Improved test coverage for new features by preparing test environments, organizing bug hunts, and contributing to team-owned test suites, resulting in earlier detection of functional issues.",
-                    "Supported on-time feature releases by collaborating with product managers to validate requirements and test readiness, resulting in smoother and more predictable launches.",
-                  ]}
+                  jobTitle={EXPERIENCE.stackadapt.jobTitle}
+                  company={EXPERIENCE.stackadapt.company}
+                  companyLink={EXPERIENCE.stackadapt.companyLink}
+                  description={EXPERIENCE.stackadapt.description}
                   color="#0061ff"
                 />
               </StepContent>
@@ -35,14 +41,10 @@ function Experience() {
               </StepLabel>
               <StepContent>
                 <ExperienceCard
-                  jobTitle={"Quality Assurance Engineer Co-op"}
-                  company="Operto"
-                  companyLink="https://operto.com/"
-                  description={[
-                    "Built a scalable E2E test automation framework from scratch using Playwright and TypeScript, reducing reliance on manual regression testing and enabling maintainable E2E test coverage.",
-                    "Streamlined deployment processes by integrating E2E test automation into the CI/CD pipeline, resulting in faster, more reliable releases and minimizing deployment errors.",
-                    "Collaborated with developers and product managers to validate tickets for release, verify functionality, and develop regression test cases, ensuring comprehensive test coverage and smooth release cycles.",
-                  ]}
+                  jobTitle={EXPERIENCE.operto.jobTitle}
+                  company={EXPERIENCE.operto.company}
+                  companyLink={EXPERIENCE.operto.companyLink}
+                  description={EXPERIENCE.operto.description}
                   color="#000000"
                 />
               </StepContent>
@@ -53,19 +55,17 @@ function Experience() {
               </StepLabel>
               <StepContent>
                 <ExperienceCard
-                  jobTitle="Test Developer Co-op"
-                  company="Visier"
-                  companyLink="https://www.visier.com/"
-                  description={[
-                    "Developed a real-time test reporting system, enabling faster failure triaging and reducing developer downtime, resulting in improved test debugging efficiency and expedited issue resolution.",
-                    "Optimized E2E test execution by 50% through strategic test data management, parallelization, and environment configuration, accelerating development cycles.",
-                    "Designed and executed manual and automated test cases for unit, integration, and end-to-end testing, enhancing software quality and reducing production defects.",
-                  ]}
+                  jobTitle={EXPERIENCE.visier.jobTitle}
+                  company={EXPERIENCE.visier.company}
+                  companyLink={EXPERIENCE.visier.companyLink}
+                  description={EXPERIENCE.visier.description}
                   color="#1d8187"
                 />
               </StepContent>
             </Step>
-            <Step active>{/* <StepLabel StepIconProps={{ icon: "" }} /> */}</Step>
+            <Step active>
+              {/* <StepLabel StepIconProps={{ icon: "" }} /> */}
+            </Step>
           </Stepper>
         </Box>
       </Box>
