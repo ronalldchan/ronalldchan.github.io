@@ -30,6 +30,7 @@ function ExperienceCard(props: {
               variant="h6"
               fontWeight={"bold"}
               display={"inline"}
+              href={props.companyLink}
               sx={{
                 "&:hover": { opacity: "70%", transitionDuration: "0.1s" },
                 textDecoration: "none",
