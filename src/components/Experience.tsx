@@ -1,12 +1,4 @@
-import {
-  Box,
-  Container,
-  Step,
-  StepContent,
-  StepLabel,
-  Stepper,
-  Typography,
-} from "@mui/material";
+import { Box, Container, Typography } from "@mui/material";
 import ExperienceCard from "./ExperienceCard";
 import { SECTIONS } from "../constants/sections";
 import { EXPERIENCE } from "../constants/content";
