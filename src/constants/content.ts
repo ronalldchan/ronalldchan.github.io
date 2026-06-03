@@ -11,6 +11,8 @@ export const EXPERIENCE = {
     jobTitle: "Quality Engineer",
     company: "StackAdapt",
     companyLink: "https://www.stackadapt.com/",
+    startDate: "May 2025",
+    endDate: "Present",
     description: [
       "Reduced production defects by identifying and reproducing bugs with engineers during feature development and validation, resulting in fewer issues reaching release.",
       "Improved test coverage for new features by preparing test environments, organizing bug hunts, and contributing to team-owned test suites, resulting in earlier detection of functional issues.",
@@ -20,8 +22,10 @@ export const EXPERIENCE = {
   },
   operto: {
     jobTitle: "Quality Assurance Engineer Co-op",
-    company: "Operto",
+    company: "Operto Guest Technologies",
     companyLink: "https://operto.com/",
+    startDate: "May 2023",
+    endDate: "Dec 2023",
     description: [
       "Built a scalable E2E test automation framework from scratch using Playwright and TypeScript, reducing reliance on manual regression testing and enabling maintainable E2E test coverage.",
       "Streamlined deployment processes by integrating E2E test automation into the CI/CD pipeline, resulting in faster, more reliable releases and minimizing deployment errors.",
@@ -31,8 +35,10 @@ export const EXPERIENCE = {
   },
   visier: {
     jobTitle: "Test Developer Co-op",
-    company: "Visier",
+    company: "Visier Inc.",
     companyLink: "https://www.visier.com/",
+    startDate: "Jan 2022",
+    endDate: "Aug 2022",
     description: [
       "Developed a real-time test reporting system, enabling faster failure triaging and reducing developer downtime, resulting in improved test debugging efficiency and expedited issue resolution.",
       "Optimized E2E test execution by 50% through strategic test data management, parallelization, and environment configuration, accelerating development cycles.",

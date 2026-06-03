@@ -10,6 +10,16 @@ import {
 import ExperienceCard from "./ExperienceCard";
 import { SECTIONS } from "../constants/sections";
 import { EXPERIENCE } from "../constants/content";
+
+import {
+  Timeline,
+  TimelineConnector,
+  TimelineContent,
+  TimelineDot,
+  TimelineItem,
+  timelineItemClasses,
+  TimelineSeparator,
+} from "@mui/lab";
 // import { Timeline, TimelineConnector, TimelineContent, TimelineDot, TimelineItem, TimelineSeparator } from "@mui/lab";
 
 function Experience() {
@@ -20,53 +30,67 @@ function Experience() {
           Experience
         </Typography>
         <Box display={"flex"} justifyContent={"center"} py={3}>
-          <Stepper orientation="vertical">
-            <Step active>
-              <StepLabel StepIconProps={{ icon: "" }}>
-                <Typography variant="h6">May 2025 - Present</Typography>
-              </StepLabel>
-              <StepContent>
-                <ExperienceCard
-                  jobTitle={EXPERIENCE.stackadapt.jobTitle}
-                  company={EXPERIENCE.stackadapt.company}
-                  companyLink={EXPERIENCE.stackadapt.companyLink}
-                  description={EXPERIENCE.stackadapt.description}
-                  color="#0061ff"
-                />
-              </StepContent>
-            </Step>
-            <Step active>
-              <StepLabel StepIconProps={{ icon: "" }}>
-                <Typography variant="h6">May 2023 - Dec. 2023</Typography>
-              </StepLabel>
-              <StepContent>
-                <ExperienceCard
-                  jobTitle={EXPERIENCE.operto.jobTitle}
-                  company={EXPERIENCE.operto.company}
-                  companyLink={EXPERIENCE.operto.companyLink}
-                  description={EXPERIENCE.operto.description}
-                  color="#000000"
-                />
-              </StepContent>
-            </Step>
-            <Step active>
-              <StepLabel StepIconProps={{ icon: "" }}>
-                <Typography variant="h6">Jan. 2022 - Aug. 2022</Typography>
-              </StepLabel>
-              <StepContent>
-                <ExperienceCard
-                  jobTitle={EXPERIENCE.visier.jobTitle}
-                  company={EXPERIENCE.visier.company}
-                  companyLink={EXPERIENCE.visier.companyLink}
-                  description={EXPERIENCE.visier.description}
-                  color="#1d8187"
-                />
-              </StepContent>
-            </Step>
-            <Step active>
-              {/* <StepLabel StepIconProps={{ icon: "" }} /> */}
-            </Step>
-          </Stepper>
+          <Box>
+            <Timeline
+              sx={{
+                [`& .${timelineItemClasses.root}:before`]: {
+                  flex: 0,
+                  padding: 0,
+                },
+              }}
+            >
+              <TimelineItem>
+                <TimelineSeparator>
+                  <TimelineDot color="primary" />
+                  <TimelineConnector />
+                </TimelineSeparator>
+                <TimelineContent>
+                  <ExperienceCard
+                    jobTitle={EXPERIENCE.stackadapt.jobTitle}
+                    company={EXPERIENCE.stackadapt.company}
+                    companyLink={EXPERIENCE.stackadapt.companyLink}
+                    startDate={EXPERIENCE.stackadapt.startDate}
+                    endDate={EXPERIENCE.stackadapt.endDate}
+                    description={EXPERIENCE.stackadapt.description}
+                    color={EXPERIENCE.stackadapt.color}
+                  />
+                </TimelineContent>
+              </TimelineItem>
+              <TimelineItem>
+                <TimelineSeparator>
+                  <TimelineDot color="primary" />
+                  <TimelineConnector />
+                </TimelineSeparator>
+                <TimelineContent>
+                  <ExperienceCard
+                    jobTitle={EXPERIENCE.operto.jobTitle}
+                    company={EXPERIENCE.operto.company}
+                    companyLink={EXPERIENCE.operto.companyLink}
+                    startDate={EXPERIENCE.operto.startDate}
+                    endDate={EXPERIENCE.operto.endDate}
+                    description={EXPERIENCE.operto.description}
+                    color={EXPERIENCE.operto.color}
+                  />
+                </TimelineContent>
+              </TimelineItem>
+              <TimelineItem>
+                <TimelineSeparator>
+                  <TimelineDot color="primary" />
+                </TimelineSeparator>
+                <TimelineContent>
+                  <ExperienceCard
+                    jobTitle={EXPERIENCE.visier.jobTitle}
+                    company={EXPERIENCE.visier.company}
+                    companyLink={EXPERIENCE.visier.companyLink}
+                    startDate={EXPERIENCE.visier.startDate}
+                    endDate={EXPERIENCE.visier.endDate}
+                    description={EXPERIENCE.visier.description}
+                    color={EXPERIENCE.visier.color}
+                  />
+                </TimelineContent>
+              </TimelineItem>
+            </Timeline>
+          </Box>
         </Box>
       </Box>
     </Container>
