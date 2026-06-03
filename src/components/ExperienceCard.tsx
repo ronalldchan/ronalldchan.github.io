@@ -27,7 +27,6 @@ function ExperienceCard(props: {
           <Box>
             <Typography
               component={"a"}
-              href={props.companyLink}
               variant="h6"
               fontWeight={"bold"}
               display={"inline"}
