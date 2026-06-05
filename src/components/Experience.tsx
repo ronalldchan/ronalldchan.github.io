@@ -12,7 +12,6 @@ import {
   timelineItemClasses,
   TimelineSeparator,
 } from "@mui/lab";
-// import { Timeline, TimelineConnector, TimelineContent, TimelineDot, TimelineItem, TimelineSeparator } from "@mui/lab";
 
 function Experience() {
   return (
@@ -35,7 +34,7 @@ function Experience() {
             >
               <TimelineItem>
                 <TimelineSeparator>
-                  <TimelineDot color="primary" />
+                  <TimelineDot sx={{ bgcolor: EXPERIENCE.stackadapt.color }} />
                   <TimelineConnector />
                 </TimelineSeparator>
                 <TimelineContent>
@@ -52,7 +51,7 @@ function Experience() {
               </TimelineItem>
               <TimelineItem>
                 <TimelineSeparator>
-                  <TimelineDot color="primary" />
+                  <TimelineDot sx={{ bgcolor: EXPERIENCE.operto.color }} />
                   <TimelineConnector />
                 </TimelineSeparator>
                 <TimelineContent>
@@ -69,7 +68,7 @@ function Experience() {
               </TimelineItem>
               <TimelineItem>
                 <TimelineSeparator>
-                  <TimelineDot color="primary" />
+                  <TimelineDot sx={{ bgcolor: EXPERIENCE.visier.color }} />
                 </TimelineSeparator>
                 <TimelineContent>
                   <ExperienceCard

@@ -14,9 +14,9 @@ export const EXPERIENCE = {
     startDate: "May 2025",
     endDate: "Present",
     description: [
-      "Reduced production defects by identifying and reproducing bugs with engineers during feature development and validation, resulting in fewer issues reaching release.",
-      "Improved test coverage for new features by preparing test environments, organizing bug hunts, and contributing to team-owned test suites, resulting in earlier detection of functional issues.",
-      "Supported on-time feature releases by collaborating with product managers to validate requirements and test readiness, resulting in smoother and more predictable launches.",
+      "Owned test strategy across projects by analyzing technical design, product requirement, and design documents to define test plans and cases, combining manual and automated coverage to ensure stable, confident releases and catch defects early.",
+      "Maintained automation framework health by triaging daily failures, resolving on-call platform issues alongside engineers, and authoring custom ESLint rules that enforced coding standards and improved codebase quality.",
+      "Partnered with project managers, developers, and designers to deliver projects on time, surfacing high-impact issues and requirement-vs-implementation discrepancies, and producing project summaries and knowledge-transfer docs that communicated QE value and coverage to stakeholders.",
     ],
     color: "#0061ff",
   },
