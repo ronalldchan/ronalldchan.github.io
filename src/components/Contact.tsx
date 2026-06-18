@@ -7,15 +7,31 @@ function Contact() {
   const iconColor: string = "primary.main";
 
   return (
-    <Container id="contact">
+    <Container
+      id="contact"
+      sx={{
+        scrollMarginTop: "64px",
+      }}
+    >
       <Box component="section" py={6}>
         <Typography variant="h4" fontWeight={"bold"}>
           Contact
         </Typography>
         <Grid container justifyContent={"space-evenly"} py={3} spacing={3}>
           <Grid item>
-            <Box display={"flex"} flexDirection={"column"} alignItems={"center"}>
-              <Avatar sx={{ width: iconAvatar, height: iconAvatar, bgcolor: iconColor, mb: 1 }}>
+            <Box
+              display={"flex"}
+              flexDirection={"column"}
+              alignItems={"center"}
+            >
+              <Avatar
+                sx={{
+                  width: iconAvatar,
+                  height: iconAvatar,
+                  bgcolor: iconColor,
+                  mb: 1,
+                }}
+              >
                 <EmailRounded sx={{ fontSize: iconSize }} />
               </Avatar>
               <Typography>Email</Typography>

@@ -15,7 +15,12 @@ import {
 
 function Experience() {
   return (
-    <Container id={SECTIONS.EXPERIENCE}>
+    <Container
+      id={SECTIONS.EXPERIENCE}
+      sx={{
+        scrollMarginTop: "64px",
+      }}
+    >
       <Box component={"section"} py={6}>
         <Typography variant="h4" fontWeight={"bold"}>
           Experience

@@ -5,7 +5,12 @@ import { PROJECTS } from "../constants/content";
 
 function Projects() {
   return (
-    <Container id={SECTIONS.PROJECTS}>
+    <Container
+      id={SECTIONS.PROJECTS}
+      sx={{
+        scrollMarginTop: "64px",
+      }}
+    >
       <Box component="section" py={6}>
         <Typography variant="h4" fontWeight={"bold"}>
           Projects

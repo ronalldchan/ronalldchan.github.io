@@ -13,7 +13,12 @@ import { ABOUT } from "../constants/content";
 
 function AboutMe() {
   return (
-    <Container id={SECTIONS.ABOUT}>
+    <Container
+      id={SECTIONS.ABOUT}
+      sx={{
+        scrollMarginTop: "64px",
+      }}
+    >
       <Box component="section" py={6}>
         <Grid
           container
